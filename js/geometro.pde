@@ -181,23 +181,6 @@ void drawShapes() {
 		
 		//get Shape from array
 		Shape temp = shapes[i];
-		
-		
-		/*chance of black
-		if ((int)random(5)==1 && (temp.w < 10 || temp.h < 10)) {
-			r = 0;
-			g = 0;
-			b = 0;
-		}*/
-		
-	
-		/*chance of white
-		if ((int)random(40)==1) {
-			r = 255;
-			g = 255;
-			b = 255;
-	
-		}*/
 
 		//fill the rectangle
 		if (temp.invisible) {
@@ -206,12 +189,10 @@ void drawShapes() {
 		else {
 			fill(temp.r, temp.g, temp.b, temp.a);
 		}
-		//rotate(temp.angle);
+		
 		rect (temp.x, temp.y, temp.w, temp.h);
 		
 	}
-
-	
 
 }
 
