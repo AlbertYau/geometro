@@ -1,5 +1,4 @@
-/* == DEFAULT ELEMENTS == */
-
+/* == ELEMENTS == */
 * {
 	margin: 0;
 	padding: 0;
@@ -18,7 +17,7 @@ p {
 	margin-bottom: 1em;
 }
 
-/* == MAIN SECTIONS == */
+/* == SECTIONS == */
 #frame {
 	float: left;
 	width: 800px;	
