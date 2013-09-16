@@ -31,7 +31,7 @@ p {
 	box-shadow: inset 0px 0 5px 5px #000;
 }
 #canvasOuter {
-	background: url('img/4.jpg');
+	background: url('img/bg_frame.jpg');
 	min-height: 700px;
 }
 #mycanvas { 
