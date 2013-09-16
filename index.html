@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>GEOMETRO</title>
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+<!-- LiBRARIES -->
+<script src="js/processing-1.4.1.min.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<link rel = "stylesheet" href = "http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+
+<!-- CUSTOM -->
+<link rel = "stylesheet" type = "text/css" href = "style.css?1" /> 
+<script src="geometro.js"></script>
+
+</head>
+
+<body>
+
+	<div id="frame">
+		<div id="frameInner">
+			<div id="canvasOuter">
+				<canvas id="mycanvas" data-processing-sources="geometro.pde"></canvas>
+			</div>
+		</div>
+	</div>
+		
+	<aside id="controls">
+
+		<section id="numShapes">
+			<label>Number of Shapes</label>
+			<div class="slider"></div>
+			<span>20</span>
+		</section>
+		
+		<section id="widthShapes">
+			<label>Width of Shapes</label>
+			<div class="slider"></div>
+			<span class="min">2</span>
+			<span class="max">300</span>
+		</section>
+		
+		<section id="heightShapes">
+			<label>Height of Shapes</label>
+			<div class="slider"></div>
+			<span class="min">2</span>
+			<span class="max">300</span>
+		</section>
+		
+		<section id="opacityShapes">
+			<label>Opacity of Shapes</label>
+			<div class="slider"></div>
+			<span class="min">200</span>
+			<span class="max">255</span>
+		</section>
+		
+		<input id="generate" type="button" value="Generate!" />
+		
+		<a id="downloadCanvas" href="javascript:void(0)" onClick="downloadCanvas();">Download Image</a>
+
+		<div id="message">
+
+			<p id="links">
+				<a href="javascript:void(0)" onClick="window.open('view-source:' + window.location.href)">View Source (Chrome + FF)</a>
+				<a href="geometro.js" target="_blank">geometro.js</a>
+				<a href="geometro.pde" target="_blank">geometro.pde</a>
+			</p>
+
+			<p>This is an experiment using Javascript, Processing.js, and jQueryUI that simply generates random shapes and colors within certain constraints.</p>
+			<p>I am exploring the possibilities of using guided chance in producing art.</p>
+
+			<ul>Planned features:
+				<li>Additional sets of shapes with their own controls</li>
+				<li>Additional shape types (ellipses, triangles)</li>
+				<li>Optional collision detection and/or spacing between shapes</li>
+				<li>Vibrancy control</li>
+				<li>Weighted random number generation to, for example, create only a few large shapes and a lot of small shapes</li>
+				<li>Angles</li>
+			</ul>
+
+		</div>
+
+	</aside>
+
+ 
+ 
+ 
+ 
+ 
+ 
+</body>
+</html>
