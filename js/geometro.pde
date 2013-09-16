@@ -215,15 +215,6 @@ void drawShapes() {
 
 }
 
-boolean overRect (int x, int y, int width, int height)  {
-  if (mouseX >= x && mouseX <= x+width && 
-      mouseY >= y && mouseY <= y+height) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
 function isCollide(Shape a, Shape b) {
     return !(
         (a.y - (a.h)/2 < b.y+(b.h)/2) ||
@@ -234,8 +225,6 @@ function isCollide(Shape a, Shape b) {
 }
 
 class Shape {
-
-	//will create getters/setters and encapsulate variables
 
 	//position
 	int x;
