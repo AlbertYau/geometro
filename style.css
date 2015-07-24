@@ -1,0 +1,83 @@
+/* == ELEMENTS == */
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	overflow: hidden;
+}
+li {
+	margin-left: 1.5em;
+}
+li:first-child {
+	margin-top: 10px;
+}
+p {
+	margin-bottom: 1em;
+}
+
+/* == SECTIONS == */
+#frame {
+	float: left;
+	width: 800px;	
+	border: 20px solid #333;
+	box-shadow: 0px 0px 40px #000;
+	background: #FFF;
+}
+#frameInner {
+	padding: 40px;
+	box-shadow: inset 0px 0 5px 5px #000;
+}
+#canvasOuter {
+	background: url('img/bg_frame.jpg');
+	min-height: 700px;
+}
+#mycanvas { 
+	display: block; 
+	margin: 0 auto; 
+	border: 0;
+}
+#mycanvas:focus { outline: 0; }
+#controls {
+	float: left;
+	min-width: 200px;
+	max-width: 450px;
+	height: 778px;
+	margin: 0 auto;
+	background: white;
+	padding: 20px;
+	border: 1px solid #ccc;
+	position: relative;
+}
+#message {
+	margin-top: 10px;
+	font-size:15px;
+}
+
+/* == UI == */
+.max {
+	display: inline-block;
+	float: right;
+}
+#generate {
+	margin: 20px 0 10px 0;
+	width: 100%;
+	font-weight: bold;
+}
+#downloadCanvas {
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+#links {
+	padding:10px;
+	border: 1px solid #CCC;
+	background: #EEE;
+}
+#links a {
+	display: block; 
+	margin-bottom:.5em;
+}
+#links a:last-child {
+	margin: 0;
+}
